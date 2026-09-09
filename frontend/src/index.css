@@ -1,0 +1,23 @@
+@import "tailwindcss";
+/* Print styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #hierarchySection,
+  #hierarchySection * {
+    visibility: visible;
+  }
+  #hierarchySection {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
